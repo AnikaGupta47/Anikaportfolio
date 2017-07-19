@@ -1,0 +1,30 @@
+Html:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do Now 5.1.0</title>
+    </head>
+    <body>
+        <button id = "magic">Click Here</button>
+        <button id = "appear">Click Here to make words appear</button>
+        <h1>Make this text hide</h1>
+    </body>
+</html>
+  
+ css:
+ #magic{
+    margin: 20px;
+    }
+    
+h1{
+    margin:0px;
+    }
+    
+    
+java:
+$("#magic").click(function(){
+    $("h1").hide();
+    });
+$("#appear").click(function(){
+$("h1").show();
+});
