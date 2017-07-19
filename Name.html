@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name</title>
+    </head>
+    <body>
+    <input id="name">
+    <button id="submit-name">Click Here</button>
+    </body>
+</html>
+
+
+
+java:
+$("#submit-name").click(function() {
+var input = $("#name").val(); 
+$("html").append($("#name").val());
+});
