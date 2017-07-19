@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome To Javascript Variables</title>
+    </head>
+    <body>
+        <h1>Welcome to Javascript</h1>
+        <button id="button1">CLICK ME</button>
+        <p></p>
+    </body>
+</html>
+
+
+
+
+java:
+var count = 1;
+  
+$("#button1").click(function(){
+    
+    if( count === 5){
+        $("p").html("you win");
+        
+    }
+    
+    count = count + 1;
+});
