@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parts of Speech: We Do</title>
+    </head>
+    <body>
+        <h1 id = "header">This is a page about the parts of speech</h1>
+        <h1 id = "noun"> This is a noun --> </h1>
+        <h1 id = "adj"> This is a adjective --> </h1>
+        <div id ="sentence"></div>
+    </body>
+</html>
+
+
+
+java:
+
+/*
+  WE DO: Variable & jQuery practice
+*/
+
+// Variables
+// We need to define a Noun and an Adjective in our JavaScript file. How would we do this?
+var noun= "a person, place, thing, or idea";
+var adj= "Descibes a noun";
+
+
+
+// Append
+// How can we append our noun variable to the second h1 tag on this page? 
+$("#noun").append(noun);
+
+// Challenge #1
+// append our adjective variable to the third h1 tag on this page. 
+$("#adj").append(adj);
+
+
+
+// Challenge #3
+// using jQuery, write a sentence using the noun and adjective you created above. Place this sentence in the div with the ID sentence.
+$("#sentence").append(" why did the " + noun + " look so " + adj);
