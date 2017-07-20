@@ -1,0 +1,53 @@
+html: 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <h1>What should your College Major be?</h1>
+    </head>
+    <body>
+     <p class="question">1. What is your favorite pass time activity?</p>
+<input type="radio" name="q1" value="1" id="q1a"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q1" value="2" id="q1b"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q1" value="3" id="q1c"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q1" value="4" id="q1d"><label for="q1d">Answer 4</label><br/> 
+
+<p class="question">2. If you had pick one item from your room that you had to carry for the rest of your life, what would it be?</p>
+<input type="radio" name="q2" value="1" id="q1e"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q2" value="2" id="q1f"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q2" value="3" id="q1g"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q2" value="4" id="q1h"><label for="q1d">Answer 4</label><br/> 
+
+<p class="question">3. How do your friends describe you?</p>
+<input type="radio" name="q3" value="1" id="q1i"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q3" value="2" id="q1j"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q3" value="3" id="q1k"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q3" value="4" id="q1l"><label for="q1d">Answer 4</label><br/> 
+
+<p class="question">4. What are your favorite subjects in school?</p>
+<input type="radio" name="q4" value="1" id="q1m"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q4" value="2" id="q1n"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q4" value="3" id="q1o"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q4" value="4" id="q1p"><label for="q1d">Answer 4</label><br/> 
+
+<p class="question">5. What is your favorite TV show?</p>
+<input type="radio" name="q5" value="1" id="q1q"><label for="q1a">Answer 1</label><br/>
+<input type="radio" name="q5" value="2" id="q1r"><label for="q1b">Answer 2</label><br/>
+<input type="radio" name="q5" value="3" id="q1s"><label for="q1c">Answer 3</label><br/>
+<input type="radio" name="q5" value="4" id="q1t"><label for="q1d">Answer 4</label><br/> 
+<h3>Your Score is:</h3>
+<h4>Now take your score and compare it to find your college major!</h4>
+<button id="button">Submit and let a Simple Online Test Determine your Entire College Major!</button>
+    </body>
+</html>
+
+java:
+var num= 0;
+$("button").click(function () {
+num = num + parseInt( $('input[name=q1]:checked').val());
+num = num + parseInt( $('input[name=q2]:checked').val());
+num = num + parseInt( $('input[name=q3]:checked').val());
+num = num + parseInt( $('input[name=q4]:checked').val());
+num = num + parseInt( $('input[name=q5]:checked').val());
+$("h3").html(num);
+});
