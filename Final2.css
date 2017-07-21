@@ -21,7 +21,7 @@
 #final_project{height:300px;width:200px;font-size:40px;color:white;font-family:georgia;background-color:#E45641;float:left;text-align:center;}
 #block{height:300px;width:200px;font-size:40px;color:white;font-family:georgia;background-color:#5D4C46;float:left;text-align:center;background-image:url("https://media.giphy.com/media/E8BKRmebpiire/giphy.gif");}
 #oranges{height:300px;width:200px;font-size:35px;color:white;font-family:georgia;background-color:#E45641;float:left;text-align:center;background-image:url("https://s-media-cache-ak0.pinimg.com/236x/a2/e1/a6/a2e1a612933ac92d91d07d88572ce4c4--oranges-wallpaper-wallpaper-orange.jpg");}
-#box{height:300px;width:200px;font-size:40px;color:white;font-family:georgia;background-color:#5D4C46;float:left;text-align:center;}
+#box{height:300px;width:200px;font-size:34px;color:white;font-family:georgia;background-color:#5D4C46;float:left;text-align:center;}
 a
 {
     color: #ffffff;
@@ -61,4 +61,5 @@ a
 #box:hover {
     background-color: #F1A94E;
 }
+
 /*These lines of code are for outlining the div tags and showing what text and at what specifications should show up*/
